@@ -1,0 +1,14 @@
+body {
+            font-style:sans-serif;
+        }
+ul{
+	clear:none;
+}
+li {
+            float:left;
+            display:block;
+            padding:8px;
+            text-decoration:none;
+            background-color: #dddddd;
+	
+        }

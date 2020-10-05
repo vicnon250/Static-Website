@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        .item-a {
+            grid-area: header;
+            margin:5px;
+        }
+        .item-b {
+            font-size-adjust: auto;
+            background-color: #dddddd;
+            grid-area: main;
+        }
+        .item-c {
+            background-color: #dddddd;
+            margin:5px;
+            grid-area: sidebar;
+        }
+        .item-d {
+            grid-area: footer;
+        }
+        .container {
+            background:url("images_backgrounds/p1.png");
+            background-size:cover;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-template-areas:"header header header header""main . sidebar sidebar""footer footer footer footer";
+        }
+        span.voting-site {
+            color:red;
+            text-decoration:underline;
+            cursor:pointer;
+        }
+        #header {
+            font-weight:bold;
+            font-size: 2em;
+            background-color: #dddddd;
+            width:40%;
+        }
+		#main{
+			font-size: 160%;
+		}
+    </style>
+
+    <title>News site</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-a">
+            <div id="header">
+                How to make your <span class="voting-site" onclick="window.open('https://www.vote.org')">
+Vote and yourself count</span>!
+            </div>
+            <ul>
+                <li><a href="./index.html">Home</a>
+                </li>
+                <li><a href="./page2.html">How to Vote</a>
+                </li>
+                <li><a href="./page3.html">Census</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="item-b">
+            <p id="main">Throughout our civic education, we are expected to learn about government and the political process where we choose our government leaders. The greatest tool and fundamental right in this process is voting through elections. 
+				By the constitution today virtually every American, naturlaized or born, over 18 is allowed to vote.
+				However voting in elections is decided by your State government within the framework of the Federal government. This means that not all States treat their elections the same, or how to vote. 
+				And with the presence of political parties, some States have an interest on limiting certain groups from voting by anti-voting tactics. 
+				This Website is desigend to be a quick and easy source for anyone interested in voting. Every election is important and your right to vote should be extended to your right to be registered to vote.
+				Registering to vote between 18-21 and voting, are the highest indicators for becoming a reliable voter in the future. On the next page will highlight gerneral steps on registering to vote properly for your situation.
+            </p>
+        </div>
+        <div class="item-d">
+            <ul>
+                <li><a href="./index.html">Home</a>
+                </li>
+                <li><a href="./page2.html">How to Vote</a>
+                </li>
+                <li><a href="./page3.html">Census</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
